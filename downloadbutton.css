@@ -1,0 +1,65 @@
+.download-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 120px;
+    padding:0px 50px;
+
+}
+
+.download-section img{
+    margin-bottom: -5px;
+}
+
+
+.download-description{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 8px;
+}
+.download-description .title-des{
+    margin-bottom: 40px;
+}
+
+.play-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .button-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .get-it-on {
+    margin-bottom: 2px;
+    font-size: 10px;
+  }
+
+  @media (max-width:560px) {
+    .modelx{
+        display: none;
+    }
+    .download-section{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 30px 0px;
+    }
+    
+} 

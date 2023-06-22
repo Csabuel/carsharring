@@ -1,0 +1,25 @@
+.footer-background{
+    background-color: #005478;
+    color: #fff;
+    height: 200px;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 180px;
+    padding-top: 30px;
+}
+
+.footer-background ul{
+    list-style-type: none;
+    margin: 0px 5px;
+}
+li{
+    margin-top: 5px;
+}
+.footer-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+} 

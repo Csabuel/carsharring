@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/general.css">
+    <link rel="stylesheet" href="/front.css">
+    <link rel="stylesheet" href="/car.css">
+    <link rel="stylesheet" href="/plan.css">
+    <link rel="stylesheet" href="/options.css">
+    <link rel="stylesheet" href="/testimonials.css">
+    <link rel="stylesheet" href="/faq.css">
+    <link rel="stylesheet" href="/downloadbutton.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav bar-->
+    <div class="navbar" id="space">
+        
+        <div class="left-section">
+            <img class="logo-pic" src="/pic/logo.svg" alt="Logo">
+        </div>
+        <div class="middle-section">
+            <ul class="list-items">
+                <li>Home</li>
+                <li>About</li>
+                <li>Vehicle Models</li>
+                <li>Testimonials</li>
+                <li>Our Team</li>
+                <li>Contact</li>
+            </ul>
+        </div>    
+        <div class="right-section">
+            <button class="sing-in button">Sign In</button>
+            <button class="register button">Register</button>
+            <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        
+    </div>
+    <!-- Front page-->
+    <div class="front-page mobile-page">
+        <div class="front-description ">
+            <div>
+                <p class="title">Plan your trip now</p>
+                <p class="title-middle">Save <span>Big</span> with our car rental</p>
+                <p class="title-des">Rent the car of your dreams.Unlimited kilometers, Unbeateble prices, flexible pick-up option and much more.</p>
+            </div>
+            <div class="front-buttons">
+                <button class="register button">Book Ride</button>
+                <button class="sing-in button">Learn More</button>
+            </div>
+        </div>
+        <div class="front-picture">
+            <img src="/pic/front pic.webp" alt="">
+        </div>
+
+    </div>
+
+    <!-- Book the car -->
+    <div class="select-options mobile-page-car">
+
+        <div>
+            <p> <i class="fa-solid fa-car"></i>Select Your car Type</p>
+            <select class="car-select" name="car" id="car" required>
+                <option value="">Select your car tpye</option>
+                <option value="1">Mercedes A class</option>
+                <option value="2">Fiat 500</option>
+                <option value="3">BMW i3</option>
+                <option value="4">Jeep Wrangler</option>
+                <option value="5">Hyundai Tucson</option>
+            </select>
+        </div>
+        <div>
+        <p><i class="fa-solid fa-location-dot"></i>Pick-up</p>
+        <select class="car-select" name="car" id="car" required>
+            <option value="">Select pick up location>
+            <option value="1">Budapest</option>
+            <option value="2">Eger</option>
+            <option value="3">Győr</option>
+            <option value="4">Pécs</option>
+            <option value="5">Szeged</option>
+            <option value="6">Miskolc</option>
+            <option value="7">Nyíregyháza</option>
+        </select>
+        </div>
+        <div>
+        <p><i class="fa-solid fa-location-dot"></i>Drop-of</p>
+        <select class="car-select" name="car" id="car" required>
+            <option value="">Select drop-of location>
+            <option value="1">Budapest</option>
+            <option value="2">Eger</option>
+            <option value="3">Győr</option>
+            <option value="4">Pécs</option>
+            <option value="5">Szeged</option>
+            <option value="6">Miskolc</option>
+            <option value="7">Nyíregyháza</option>
+        </select>
+        </div>
+
+        <div>
+        <p><i class="fa-solid fa-calendar-days"></i>Pick-Up</p>
+        <input type="date" name="date" placeholder="yyyy/ mm / dd" required>
+        </div>
+        
+        <div>
+        <p><i class="fa-solid fa-calendar-days"></i>Drop-Up</p>
+        <input type="date" name="date" placeholder="yyyy/ mm / dd" required>
+        </div>
+        
+        <div>
+        <button class="register button">Search</button>
+        </div>
+    </div>
+
+    <!-- Plan your trip-->
+
+    <div class="planning-options">
+        <div class="planning-title">
+            <p class="title">Plan your trip now</p>
+            <p class="title-middle">Quick & easy car rental</p>
+        </div>
+
+        <div class="planning-descriptions mobile-page-plan">
+            <div>
+                <i class="fa-solid fa-car fa-2xl"></i>
+                <p>Select Car</p>
+                <p> We offer a big range of vehicle for all your friving needs. We have the perfet car to meet your needs</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone fa-2xl"></i>
+                <p>Contact Operator</p>
+                <p>Our knowledgeable and friendly operators are always ready to help with any questions or concerns</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-car-side fa-2xl"></i>
+                <p>Let's Drive</p>
+                <p>Whether you are hitting the open road, we've got you convered with our wide range of cars</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Choose the car-->
+
+    <div class="planning-options">
+        <div class="planning-title">
+            <p class="title">Vechile Models</p>
+            <p class="title-middle">Our rental fleet</p>
+            <p class="title-des">Choose from a warently of our vehicles to your next adventure or business trip</p>
+        </div>
+    </div>
+    <div class="car-container mobile-page-option">
+        <div>
+            <div class="car-models" onclick="changePicture(0)">Fiat 500</div>
+            <div class="car-models" onclick="changePicture(1)">Mercedes A class</div>
+            <div class="car-models" onclick="changePicture(2)">BMW i3</div>
+            <div class="car-models" onclick="changePicture(3)">Hyundai Tucson</div>
+            <div class="car-models" onclick="changePicture(4)">Jeep Wrangler</div>
+          </div>
+        <div>
+            <div id="car-picture">
+                <img id="car-image" class="button-position" src="/Cars/car1.webp" alt="">
+                <button class="register button">Reserv Now</button>
+            </div>
+        </div>
+        <div class="table">
+            <div class="table-item item-1" ><span id="rent">30</span>$ / rent day</div>
+            <div class="table-item item-2">Model</div>
+            <div class="table-item item-3" id="model">Fiat 500</div>
+            <div class="table-item item-4">Transmission</div>
+            <div class="table-item item-5" id="transmission">Automatic</div>
+            <div class="table-item item-6">Year</div>
+            <div class="table-item item-7" id="year">2021</div>
+            <div class="table-item item-2">Doors</div>
+            <div class="table-item item-3" id="doors">3</div>
+            <div class="table-item item-4">AC</div>
+            <div class="table-item item-5" id="ac">Yes</div>
+            <div class="table-item item-6">Fuel</div>
+            <div class="table-item item-7" id="fuel">Petrol</div>
+          </div>
+          
+        </div>
+    </div>
+
+    <!--Separator -->
+
+    <div class="separator">
+        <p class="title-middle">Save big with our cheap car rental!</p>
+        <p class="title-des">Top prices in the country. <span>24/7</span> Support</p>
+    </div>
+
+    <!--Testimonials -->
+
+    <div class="testimonials">
+        <div>
+            <p class="title-middle">Client's Testimonials</p>
+            <p class="title-des">Discover the positiv impact we have made on the clients by reading through their testimonials</p>
+        </div>
+        <div class="clients">
+            <div class="client-profile">
+                <p class="opinion">
+                    I had a fantastic time renting a car from this company. The process was smooth, and the car was in great condition. Will definitely rent from them again!
+                </p>
+                <div class="people">
+                    <img class="pic" src="/profilpic/harry.jpg" alt="">
+                    <div>
+                        <p class="name">Parry Hotter</p>
+                        <p class="place">Budapest</p>
+                    </div>
+                    <i class="fa-solid fa-star fa-xl"></i>
+                </div>
+            </div>
+            <div class="client-profile">
+                <p class="opinion">
+                    The car rental experience was excellent! The staff was friendly, and the vehicle was clean and comfortable. Highly recommended!
+                </p>
+                <div class="people">
+                    <img class="pic" src="/profilpic/ron.jpeg" alt="">
+                    <div>
+                        <p class="name">Pon Rizzly</p>
+                        <p class="place">Debrecen</p>
+                    </div>
+                    <i class="fa-solid fa-star fa-xl"></i>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- FAQ--> 
+
+    
+
+    <div class="question-answer">
+            <div>
+                <img src="/Cars/jeep.jpeg" class="jeep" alt="">
+            </div>
+
+        <p class="title-middle">Frequently Asked Questions</p>
+        <p class="title-des">Frequently asked questions about the car rental booking process on our website.</p>
+    
+        <div class="question">
+            
+            <p class="question-title">1. Can I add an additional driver to my rental?</p>
+            <button onclick="toggleAnswer(0)">
+                <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
+                <span class="down-arrow"><i class="fas fa-angle-down"></i></span>
+            </button>
+        </div>
+        <div class="answer" id="answer-0">
+            <p>
+                Yes, additional drivers can be added for an extra fee and must meet age and license requirements.
+            </p>
+       
+        </div>
+
+        <div class="question">
+            <p class="question-title">2. What documents do I need to rent a car</p>
+            <button onclick="toggleAnswer(1)">
+                <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
+                <span class="down-arrow"><i class="fas fa-angle-down"></i></span>
+            </button>
+        </div>
+        <div class="answer" id="answer-1">
+            <p>
+                Valid driver's license and a major credit card.
+            </p>
+        </div>
+
+
+        <div class="question">
+            <p class="question-title">3. Is there a minimum age requirement for renting a car?</p>
+            <button onclick="toggleAnswer(2)">
+                <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
+                <span class="down-arrow"><i class="fas fa-angle-down"></i></span>
+            </button>
+        </div>
+        <div class="answer" id="answer-2">
+            <p>
+                Minimum age is usually 21 years, but it may vary by rental company.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Download the app-->
+
+    <div class="download-section">
+        <div class="download-description">
+            <p class="title-middle">Download our mobile app</p>
+            <p class="title-des">Introducing our revolutionary app designed to enhance your digital experience! Download now and gain access to a wide range of features and functionalities, tailored to meet your specific needs.</p>
+            <div>
+                <div class="play-button">
+                    <img src="/logo/google-play-arrow-png-logo-8.png"  class="logo">
+                    <div class="button-text">
+                    <span class="get-it-on">Get it on</span>
+                    <span class="google-play">Google Play</span>
+                    </div>
+                </div>
+
+                <div class="play-button">
+                    <img src="/logo/03fgb1ot0gopb6aa0d5fk9hrgl-d924a0bac860a4439824067f33c8f4c7.png"  class="logo">
+                    <div class="button-text">
+                    <span class="get-it-on">Download on the</span>
+                    <span class="google-play">App Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <img  class="modelx"src="/Cars/Screenshot 2023-05-26 at 11.00.22.png" alt="">
+        </div>
+        
+    </div>
+
+    <!--Footer-->
+    <div class="footer-background">
+    <div class="footer-section">
+        <div class="footer-info">
+            <ul>
+                <li class="footer-title">Car Rental</li>
+                <li>01 23 456 7890</li>
+                <li>rentacar@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer-company">
+            <ul>
+                <li class="footer-title">Company</li>
+                <li>Budapest</li>
+                <li>Careers</li>
+                <li>Mobile</li>
+                <li>Blog</li>
+                <li>How we work</li>
+            </ul>
+        </div>
+        <div class="footer-open">
+            <ul>
+                <li class="footer-title">Working Hours</li>
+                <li>Mon - Fri : 9:00AM - 20:00 PM</li>
+                <li>Sat : 9:00AM - 19:00PM </li>
+                <li>Sun: Closed</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    
+   
+    
+    <script src="https://kit.fontawesome.com/98291ddf62.js" crossorigin="anonymous"></script>
+
+    <script src="/function.js"></script>
+    <script src="/faq.js"></script>
+</body>
+</html>

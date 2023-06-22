@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="nameCell">John Doe</td>
+        <td id="ageCell">30</td>
+        <td id="cityCell">New York</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Define initial data
+    var data = {
+      name: "John Doe",
+      age: "30",
+      city: "New York"
+    };
+
+    // Function to update the table data
+    function updateTable() {
+      document.getElementById("nameCell").textContent = data.name;
+      document.getElementById("ageCell").textContent = data.age;
+      document.getElementById("cityCell").textContent = data.city;
+    }
+
+    // Button click event handlers
+    document.getElementById("btn1").addEventListener("click", function() {
+      data.name = "Jane Smith";
+      data.age = "25";
+      data.city = "London";
+      updateTable();
+    });
+
+    document.getElementById("btn2").addEventListener("click", function() {
+      data.name = "Bob Johnson";
+      data.age = "45";
+      data.city = "Paris";
+      updateTable();
+    });
+  </script>
+
+  <button id="btn1">Change Data 1</button>
+  <button id="btn2">Change Data 2</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.select-options select,
+.select-options input{
+    margin-top: 6px;
+    width: 200px;
+    height: 26px;
+    border: 1px solid #005478;
+    border-radius: 8px;
+    padding-left: 10px;
+    color: #005478;
+}
+
+.select-options{
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom: 200px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+}
+.select-options button {
+    margin-top: 17px;
+    width: 200px;
+}
+
+.select-options i{
+    margin-right: 7px;
+}
+
+.fa-solid{
+    color: #005478;
+    
+}
