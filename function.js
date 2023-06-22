@@ -4,24 +4,24 @@ function changePicture(index) {
 
     switch(index){
         case 0:
-            carImage.setAttribute("src", "/Cars/car1.webp");
+            carImage.setAttribute("src", "Cars/car1.webp");
             break;
         case 1:
-            carImage.setAttribute("src","/Cars/car2.webp");
+            carImage.setAttribute("src","Cars/car2.webp");
             break;
         case 2:
-            carImage.setAttribute("src", "/Cars/car3.webp");
+            carImage.setAttribute("src", "Cars/car3.webp");
             break;
         case 3:
-            carImage.setAttribute("src", "/Cars/car4.webp");
+            carImage.setAttribute("src", "Cars/car4.webp");
             break;
         case 4:
-            carImage.setAttribute("src", "/Cars/car5.webp");
+            carImage.setAttribute("src", "Cars/car5.webp");
             break;
 
 
         default:
-            carImage.setAttribute("src", "/Cars/car5.webp");
+            carImage.setAttribute("src", "Cars/car5.webp");
     }
 
     changeDes(index)
